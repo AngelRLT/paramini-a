@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por decir Sí!</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #f3d6e4, #e2c1c1);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #b56576;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #555;
+            line-height: 1.8em;
+            margin: 15px 0;
+        }
+
+        .heart {
+            font-size: 3em;
+            color: #ff4a41;
+            animation: heartbeat 1.5s infinite;
+            margin: 20px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .song-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #b56576;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .song-link:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Ayyy dijiste que siii!</h1>
+        
+        <p>Mi amor, me haces tan feliz. Saber que quieres caminar a mi lado es el regalo más hermoso que me has dado.</p>
+        
+        <p>Prometo hacerte reír cada día, ser tu apoyo en los momentos difíciles y tu compañero en los días buenos y malos. Quiero hacer que cada instante juntos sea inolvidable.</p>
+
+        <p><strong>Gracias por ser mi persona especial.</strong> Eres el amor que siempre soñé, y quiero construir contigo todos los sueños que nos esperan. ❤  quiero hacerte la MUJER más feliz del mundoooo. Mándame una captura de pantalla de tu opción que escogiste❤</p>
+        
+        <div class="heart">❤️</div>
+
+        <!-- Enlace a la canción -->
+        <a href="https://youtu.be/W03KTwbeGMo?si=oohtISDNwa_-v-uq" target="_blank" class="song-link">Escucha esta canción que me hace pensar en ti 🎶</a>
+    </div>
+</body>
+</html>

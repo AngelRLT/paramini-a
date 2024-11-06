@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carta para Ti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #b56576;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #555;
+            line-height: 1.8em;
+            margin: 15px 0;
+        }
+
+        .btn-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            background-color: #b56576;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff6f61;
+        }
+
+        /* Animación */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Para ti, mi amor</h1>
+        
+        <p>Hola mi Princesita hermosa, descubriste mi cartita y me da gusto mira la razón de este regalito es porque quiero confesarte todos mis sentimientos. Desde que te vi me gustaste demasiado, con esa carita tan tierna, esos ojitos hermosos verdes tlj que son preciosos mi niña hermosa y esa sonrisa tan hermosa me gustaste muchísimo, momento después que nos empezamos a conocer supe que eras una gran mujer por el tipo de valores que tienes, tu forma de ser, tu carisma, que seas una chica muy divertida, trabajadora, que se da a respetar la verdad me  has hecho un mejor hombre y una mejor persona y la verdad me enamoraste tanto que me quitaste las ganas de conocer a alguien más, quiero que seas tú, y eres la única persona con la cual quiero todo, no quiero tener a nadie mas mi niña, yo entiendo que la distancia sea un factor el cual haga que la relación sea mas compleja pero también nos sirve para conocernos como pareja, conocer las actitudes de la otra persona siendo algo y si en verdad nos respetaremos aun estando a distancia y darnos lealtad, por mi parte mi corazón yo soy un hombre el cual jamás te sería infiel, jamás tendría ojos para alguien más que no seas tú y no creo que tú puedas engañarme sabiendo lo que he sufrido yo se que eres una mujer de valores por eso te quiero como pareja mi niña y si hoy quiero dar el siguiente paso yo se que quieres que le pida la mano a tu Papá y si lo haré pero mientras quiero que nos conozcamos como pareja por si si queremos algo con el otro hacer el máximo esfuerzo por juntarnos mi niña, a mi me encantaría estar a tu lado, darte besitos, darte rosas, chocolates, llevarte a comer tus taquitos de barbacoa que tanto te gustan entonces mi niña que dices? me tomarías la mano para recorrer un camino difícil pero si los dos nos amamos bien, hay respeto, confianza y todo será un camino fácil mi niña y este camino llevará a una recompensa futura, entonces mi princesita.</p>
+
+        <p><strong>¿Puedo ser tu novio?</strong></p>
+
+        <!-- Botones de respuesta -->
+        <div class="btn-container">
+            <button class="btn" onclick="respuesta('si')">Sí</button>
+            <button class="btn" onclick="respuesta('no')">No</button>
+        </div>
+    </div>
+
+    <!-- Script para manejar la respuesta -->
+    <script>
+        function respuesta(opcion) {
+            if (opcion === 'si') {
+                window.open("respuesta.html", "_blank"); // Abre la segunda página en una nueva pestaña
+            } else {
+                alert("Bueno corazón, por lo menos lo intentamos.");
+            }
+        }
+    </script>
+</body>
+</html>
